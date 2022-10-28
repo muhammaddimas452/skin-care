@@ -1,0 +1,3912 @@
+@font-face
+
+/*perintah untuk memanggil font eksternal*/
+    {
+    font-family: 'Proxima Nova';
+    /*memberikan nama bebas untuk font*/
+    src: url('Proxima-Nova-Font.ttf');
+    /*memanggil file font eksternalnya di folder nexa*/
+}
+
+@font-face
+
+/*perintah untuk memanggil font eksternal*/
+    {
+    font-family: 'Gilroy';
+    /*memberikan nama bebas untuk font*/
+    src: url('Gilroy-ExtraBold.ttf');
+    /*memanggil file font eksternalnya di folder nexa*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+@keyframes bounce {
+    30% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #FCF8E8;
+}
+
+header .ellips {
+    position: absolute;
+    z-index: -1;
+}
+
+.navbar-box {
+    padding: 10px 0 10px 0;
+    position: fixed;
+    width: 100%;
+    transition: all .3s ease;
+    z-index: 1;
+}
+
+.navbar-box.scrolling-active {
+    background: #FCF8E8;
+    z-index: 999;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar-box .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-box .box-navbar .logo h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.navbar-box .box-navbar .menu {
+    display: flex;
+    column-gap: 70px;
+}
+
+.navbar-box .box-navbar .menu li {
+    list-style-type: none;
+}
+
+.navbar-box .box-navbar .menu li a {
+    text-decoration: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 170.5%;
+    color: #BDBDBD;
+}
+
+.navbar-box .box-navbar .menu li a:hover {
+    color: #000000;
+}
+
+.navbar-box .box-navbar .icon {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.img-cart:hover {
+    animation: bounce 1s;
+    cursor: pointer;
+}
+
+.img-bell:hover {
+    animation: bounce 1s;
+    cursor: pointer;
+}
+
+.img-prof:hover {
+    animation: bounce 1s;
+    cursor: pointer;
+}
+
+#menu-bar {
+    font-size: 35px;
+    display: none;
+}
+
+/* CSS Home Start */
+
+header .hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero .box-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+    align-items: center;
+    margin: 23px 0 73px 0;
+}
+
+.hero .box-hero .image img {
+    width: 100%;
+    height: 80%;
+}
+
+
+.hero .box-hero .box h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 150.5%;
+    color: #000000;
+}
+
+.hero .box-hero .box p {
+    margin-top: 22px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.hero .box-hero .box button {
+    margin-top: 38px;
+    width: 217px;
+    height: 80px;
+    background: #94B49F;
+    border-radius: 12px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 124%;
+    color: #000000;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.hero .box-hero .box button:hover {
+    background: #6ba36c;
+    transition: all .3s ease;
+}
+
+.service {
+    background-color: #F5E8C7;
+}
+
+.service .box-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 67px 0 75px 0;
+}
+
+.service .box-service .service-caption .service-title {
+    padding: 0 141px;
+}
+
+.service .box-service .service-caption .service-title h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 124%;
+    text-align: center;
+    color: #000000;
+}
+
+.service .box-service .service-caption .service-value {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    column-gap: 13rem;
+    text-align: center;
+}
+
+.service .box-service .service-caption .service-value div:nth-child(2) p {
+    width: 200px;
+}
+
+.service .box-service .service-caption .service-value h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 119.237px;
+    line-height: 124%;
+    text-align: center;
+    color: #000000;
+}
+
+.service .box-service .service-caption .service-value p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28.6855px;
+    line-height: 124%;
+    text-align: center;
+    color: #000000;
+}
+
+.advantage .box-advantage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+    align-items: center;
+    margin: 155px 0 180px 0;
+}
+
+.advantage .box-advantage .image img {
+    width: 100%;
+    height: 70%;
+}
+
+.advantage .box-advantage .box-caption h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.advantage .box-advantage .box-caption p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 174%;
+    color: #000000;
+}
+
+.advantage .box-advantage .box-caption button {
+    margin-top: 35px;
+    width: 217px;
+    height: 80px;
+    left: 663px;
+    top: 2184px;
+    background: #94B49F;
+    border-radius: 12px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 124%;
+    color: #000000;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.advantage .box-advantage .box-caption button:hover {
+    background: #6ba36c;
+    transition: all .3s ease;
+}
+
+.product .box-product .box-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product .box-product .box-title h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 83.9035px;
+    line-height: 174%;
+    color: #000000;
+}
+
+.product .box-product .box-title a {
+    text-decoration: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 174%;
+    color: #000000;
+}
+
+.product .box-product .list-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 40px;
+    align-items: center;
+    margin: 45px 0 180px 0;
+    row-gap: 80px;
+}
+
+.product .box-product .list-product .detail-product {
+    width: 100%;
+}
+
+.product .box-product .list-product .detail-product img {
+    width: 100%;
+}
+
+.product .box-product .list-product .detail-product .caption-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product .box-product .list-product .detail-product .caption-product .name-rate h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 174%;
+    color: #000000;
+}
+
+.product .box-product .list-product .detail-product .caption-product .price p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 174%;
+    color: #000000;
+}
+
+.testimonial .box-testimonial .box-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial .box-testimonial .box-title h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 83.9035px;
+    line-height: 174%;
+    color: #000000;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    color: #94B49F;
+    font-size: 60px;
+}
+
+.prev:hover,
+.next:hover {
+    color: #6ba36c;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.testimonial .box-testimonial .box-list-test .testimonial-slide {
+    margin-top: 68px;
+}
+
+.testimonial .box-testimonial .box-list-test .testimonial-slide h3 {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52.7515px;
+    line-height: 69px;
+    text-align: center;
+    color: #000000;
+}
+
+.testimonial .box-testimonial .box-list-test .testimonial-slide .prof-test img {
+    width: 108px;
+    height: 108px;
+}
+
+.testimonial .box-testimonial .box-list-test .testimonial-slide .prof-test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+    margin-top: 37px;
+}
+
+.testimonial .box-testimonial .box-list-test .testimonial-slide .prof-test div p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 131%;
+    color: #000000;
+}
+
+.testimonial .box-testimonial .box-list-test .testimonial-slide .prof-test div span {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 131%;
+    color: #828282;
+}
+
+.subscribe .box-subscribe {
+    margin-top: 190px;
+    margin-bottom: 190px;
+}
+
+.subscribe .box-subscribe .subscribe-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe .box-subscribe .subscribe-title h3 {
+    width: 40vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 174%;
+    color: #000000;
+}
+
+.subscribe .box-subscribe .subscribe-title .form input {
+    width: 20vw;
+    height: 90px;
+    background: #F2F2F2;
+    box-shadow: 50px 30px 150px rgba(46, 4, 4, 0.15);
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding-left: 15px;
+    line-height: 174%;
+    color: #BDBDBD;
+}
+
+.subscribe .box-subscribe .subscribe-title .form button {
+    width: 13vw;
+    height: 90px;
+    background: #94B49F;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 174%;
+    color: #000000;
+}
+
+/* CSS Home End */
+
+/* CSS Product Start */
+
+.product-area .carrousel-product-area {
+    padding-top: 156px;
+}
+
+.swiper {
+    width: 80%;
+}
+
+.swiper-slide {
+    padding: 0 16px;
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/slider-prod.png);
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    align-content: center;
+
+}
+
+.swiper-slide h3 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5.5vw;
+    line-height: 118px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 0 155px;
+}
+
+.swiper-slide button {
+    margin-top: 30px;
+    width: 200px;
+    height: 80px;
+    background: #94B49F;
+    border-radius: 12px;
+    outline: 0;
+    border: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 124%;
+    color: #000000;
+}
+
+.swiper-slide button:hover {
+    color: white;
+    background: #6ba36c;
+}
+
+.product-name .box-product-name {
+    margin-top: 70px;
+}
+
+.product-name .box-product-name .search-input form button {
+    width: 5%;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: 0;
+    padding-bottom: 10px;
+}
+
+.product-name .box-product-name .search-input form button .fa-search {
+    font-size: 32px;
+    color: #94B49F;
+}
+
+.product-name .box-product-name .search-input form input {
+    width: 95%;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    outline: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170.5%;
+    padding-left: 20px;
+    color: #BDBDBD;
+}
+
+.product-name .box-product-name .list-product-name {
+    margin-top: 45px;
+    display: grid;
+    row-gap: 35px;
+}
+
+.product-name .box-product-name .list-product-name img {
+    width: 100%;
+}
+
+.product .box-product {
+    margin-top: 72px;
+}
+
+.product .box-product .product-title h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 174%;
+    color: #000000;
+}
+
+/* CSS Product End */
+
+/* CSS Detail Start */
+
+.detail-area .box-detail-area {
+    padding-top: 135px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+}
+
+.detail-area .box-detail-area .main-detail-image img {
+    width: 100%;
+    height: 39vw;
+}
+
+.detail-area .box-detail-area .all-detail-image {
+    display: grid;
+    row-gap: 1.5vw;
+}
+
+.detail-area .box-detail-area .all-detail-image img {
+    width: 100%;
+    height: 18.5vw;
+}
+
+.detail-product-area .box-detail-product-area {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-items: space-between;
+}
+
+.detail-product-area .box-detail-product-area .title-detail-product h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.detail-product-area .box-detail-product-area .title-detail-product img {
+    width: 11.5vw;
+}
+
+.detail-product-area .box-detail-product-area .description-detail-product {
+    margin-top: 5vw;
+}
+
+.detail-product-area .box-detail-product-area .description-detail-product h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.detail-product-area .box-detail-product-area .description-detail-product p {
+    margin-top: 1.5vw;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.select-variant {
+    width: 27.7vw;
+    height: 518px;
+    background: #94B49F;
+    border: 1px solid #FCF8E8;
+    border-radius: 8px;
+    padding: 2vw 2vw;
+    justify-self: end;
+}
+
+.select-variant h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1vw;
+    line-height: 27px;
+    color: #000000;
+}
+
+.select-variant .size {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8vw;
+}
+
+.select-variant .size button {
+    background: #F2F2F2;
+    border-radius: 4px;
+    padding: 3px 1.8vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 27px;
+    color: #000000;
+    outline: 0;
+    border: none;
+}
+
+.select-variant .size button:hover {
+    background: rgba(252, 248, 232, 0.5);
+}
+
+.select-variant .discount-desc {
+    display: flex;
+    align-items: center;
+    padding: 1.2vw 0.65vw;
+    background: #FCF8E8;
+    border-radius: 8px;
+    column-gap: 1.1vw;
+    margin-top: 1.7vw;
+}
+
+.select-variant .discount-desc img {
+    width: 2.47vw;
+}
+
+.select-variant .discount-desc h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.04vw;
+    line-height: 1.5vw;
+    color: #000000;
+}
+
+.select-variant .total-buying {
+    margin-top: 1.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-variant .total-buying .count {
+    display: flex;
+    column-gap: 3.25vw;
+}
+
+.select-variant .total-buying .count button {
+    outline: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.select-variant .total-buying .count button img {
+    width: 2.7vw;
+}
+
+.select-variant .total-buying .count button img:hover {
+    animation: bounce 1s;
+}
+
+.select-variant .total-buying h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.08vw;
+    line-height: 3.1vw;
+    color: #FCF8E8;
+}
+
+.select-variant h3:nth-child(5) {
+    margin-top: 0.2vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7vw;
+    line-height: 15px;
+    color: #000000;
+}
+
+.select-variant .btn-select {
+    margin-top: 1.7vh;
+    display: grid;
+    row-gap: 0.7vw;
+}
+
+.select-variant .btn-select button {
+    width: 100%;
+    height: 4.4vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 20px;
+    color: #000000;
+}
+
+.select-variant .btn-select button:nth-child(1) {
+    outline: 0;
+    border: none;
+    background: #FCF8E8;
+    border-radius: 4px;
+}
+
+.select-variant .btn-select button:nth-child(1):hover {
+    background: rgba(252, 248, 232, 0.5);
+}
+
+.select-variant .btn-select button:nth-child(2) {
+    outline: 0;
+    background: rgba(252, 248, 232, 0.5);
+    border: 3px solid #FCF8E8;
+    border-radius: 4px;
+}
+
+.select-variant .btn-select button:nth-child(2):hover {
+    background: #FCF8E8;
+    border: 5px solid #a8a8a8;
+}
+
+.testimonial-detail .box-testimonial-detail {
+    margin-top: 70px;
+    width: 40.4vw;
+}
+
+.testimonial-detail .box-testimonial-detail .title-testimonial-detail h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.56vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.testimonial-detail .box-testimonial-detail .list-testimonial-detail {
+    margin-top: 20px;
+}
+
+.testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 30px;
+}
+
+.testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial img {
+    width: 4.94vw;
+    height: 4.94vw;
+}
+
+.testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1vw;
+    line-height: 170.5%;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name img {
+    width: 6.9vw;
+    height: 1.1vw;
+}
+
+.testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.17vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+/* CSS Detail End */
+
+/* CSS Payment Start */
+
+.payment-area .box-payment-area {
+    padding-top: 135px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 20px;
+}
+
+.payment-area .box-payment-area .payment-image img {
+    width: 100%;
+}
+
+.payment-area .box-payment-area .detail-payment h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.08vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.payment-area .box-payment-area .detail-payment p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment {
+    width: 34.2vw;
+    margin-top: 1.04vw;
+
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment div:nth-child(1) {
+    display: grid;
+    row-gap: -5px;
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment label {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment select {
+    padding: 2.1vw 0.9vw;
+    gap: 10px;
+    width: 34.2vw;
+    height: 6.5vw;
+    background: #F2F2F2;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3vw;
+    line-height: 170.5%;
+    color: #000000;
+    outline: 0;
+    border: none;
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment .subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment .subtotal h3:nth-child(1),
+.payment-area .box-payment-area .detail-payment .desc-payment .total h3:nth-child(1) {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.04vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment .subtotal h3:nth-child(2),
+.payment-area .box-payment-area .detail-payment .desc-payment .total h3:nth-child(2) {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment button {
+    justify-content: center;
+    align-items: center;
+    padding: 1.62vw 2.86vw;
+    gap: 10px;
+    width: 34.2vw;
+    height: 5.2vw;
+    background: #94B49F;
+    border-radius: 12px;
+    outline: 0;
+    border: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 124%;
+    color: #000000;
+}
+
+.payment-area .box-payment-area .detail-payment .desc-payment button:hover {
+    background: #b4b4b4;
+}
+
+/* CSS Payment End */
+
+/* CSS Cart Start */
+
+.cart-area .box-cart-area {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.cart-area .box-cart-area .lists-cart {
+    display: grid;
+    row-gap: 2.5vw;
+}
+
+.cart-area .box-cart-area .list-cart {
+    display: flex;
+    column-gap: 5px;
+    border-bottom: 1px solid rgba(189, 189, 189, 1);
+}
+
+.cart-area .box-cart-area .list-cart .cart {
+    display: flex;
+    column-gap: 2.73vw;
+}
+
+.cart-area .box-cart-area .list-cart input {
+    align-self: start;
+    width: 1.69vw;
+    height: 1.7vw;
+}
+
+.cart-area .box-cart-area .list-cart .cart-img {
+    width: 14.1vw;
+}
+
+.cart-area .box-cart-area .list-cart .name-product h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.08vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.cart-area .box-cart-area .list-cart .cart .name-product p,
+.cart-area .box-cart-area .list-cart .cart .name-product p span {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.17vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.cart-area .box-cart-area .list-cart .cart .detail-cart {
+    display: grid;
+    align-content: space-between;
+}
+
+.cart-area .box-cart-area .list-cart .cart .max-product div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-area .box-cart-area .list-cart .cart .detail-cart .max-product .btn-plus-minus img {
+    outline: 0;
+    border: none;
+    background: none;
+    width: 2.73vw;
+    height: 2.7vw;
+    cursor: pointer;
+}
+
+.cart-area .box-cart-area .list-cart .cart .max-product h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.08vw;
+    line-height: 2.92vw;
+    color: #76549A;
+}
+
+.cart-area .box-cart-area .list-cart .cart .max-product div:nth-child(1) {
+    column-gap: 1.95vw;
+    display: flex;
+    align-items: start;
+}
+
+.cart-area .box-cart-area .list-cart .cart .max-product p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.97vw;
+    line-height: 15px;
+    margin-top: 0.5vw;
+    color: #000000;
+}
+
+.cart-area .box-cart-area .list-cart button {
+    outline: 0;
+    border: none;
+    background: none;
+    Width: 2.23vw;
+    Height: 2.23vw;
+    cursor: pointer;
+}
+
+.cart-area .box-cart-area .list-cart button:hover {
+    animation: bounce 1s;
+}
+
+.cart-area .box-cart-area .list-cart .cart .trash-img {
+    Width: 2.23vw;
+    Height: 2.1vw;
+}
+
+.cart-area .box-cart-area .total-cart {
+    box-sizing: border-box;
+    padding: 2.08vw;
+    gap: 10px;
+    width: 27.79vw;
+    height: 50.78vh;
+    background: #94B49F;
+    border: 1px solid #FCF8E8;
+    border-radius: 8px;
+}
+
+.cart-area .box-cart-area .total-cart h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.17vw;
+    line-height: 27px;
+    color: #000000;
+}
+
+.cart-area .box-cart-area .total-cart p {
+    margin-top: 0.65vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.08vw;
+    line-height: 48px;
+    color: #000000;
+}
+
+.cart-area .box-cart-area .total-cart .discount-desc {
+    display: flex;
+    align-items: center;
+    padding: 1.2vw 0.65vw;
+    background: #FCF8E8;
+    border-radius: 8px;
+    column-gap: 1.1vw;
+    margin-top: 1.7vw;
+}
+
+.cart-area .box-cart-area .total-cart .discount-desc img {
+    width: 2.47vw;
+}
+
+.cart-area .box-cart-area .total-cart .discount-desc h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.04vw;
+    line-height: 1.5vw;
+    color: #000000;
+}
+
+.cart-area .box-cart-area .total-cart .btn-select button {
+    margin-top: 1.7vw;
+    width: 100%;
+    height: 4.4vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 20px;
+    color: #000000;
+}
+
+.cart-area .box-cart-area .total-cart .btn-select button:nth-child(1) {
+    outline: 0;
+    border: none;
+    background: #FCF8E8;
+    border-radius: 4px;
+}
+
+.cart-area .box-cart-area .total-cart .btn-select button:nth-child(1):hover {
+    background: rgba(252, 248, 232, 0.5);
+}
+
+/* CSS Cart End */
+
+/* CSS Contact Start */
+
+.contact-area .box-contact-area {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 80px;
+}
+
+.contact-area .box-contact-area .substract-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: space-between;
+}
+
+.contact-area .box-contact-area .substract-1 img:nth-child(1) {
+    width: 11.80vw;
+}
+
+.contact-area .box-contact-area .substract-1 img:nth-child(2) {
+    padding-bottom: 100px;
+    justify-self: end;
+    width: 3.2vw;
+}
+
+.contact-area .box-contact-area .contact-form h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.60vw;
+    line-height: 174%;
+    text-align: center;
+    color: #000000;
+}
+
+.contact-area .box-contact-area .contact-form .form-area {
+    display: grid;
+}
+
+.contact-area .box-contact-area .contact-form .form-area label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.12vw;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.718161px;
+    color: #000000;
+}
+
+.contact-area .box-contact-area .contact-form .form-area input {
+    width: 44.05vw;
+    height: 5.88vw;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 1.69vw 1.6vw;
+    outline: 0;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.99vw;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.718161px;
+    color: #A0A3BD;
+}
+
+.contact-area .box-contact-area .contact-form .form-area textarea {
+    width: 44.05vw;
+    height: 18.9vw;
+    background: #FFFFFF;
+    border-radius: 0.99vw;
+    padding: 1.23vw 1.6vw;
+    outline: 0;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.99vw;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.718161px;
+    color: #A0A3BD;
+}
+
+.contact-area .box-contact-area .contact-form .form-area button {
+    margin-top: 2.3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.62vw 2.86vw;
+    gap: 10px;
+    background: #94B49F;
+    border-radius: 12px;
+    outline: 0;
+    border: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.56vw;
+    line-height: 124%;
+    color: #000000;
+}
+
+.contact-area .box-contact-area .contact-form .form-area button:hover {
+    background: #b4b4b4;
+    color: #FFFFFF;
+}
+
+.contact-area .box-contact-area .substract-2 {
+    justify-self: end;
+}
+
+.contact-area .box-contact-area .substract-2 img {
+    width: 5.2vw;
+}
+
+/* CSS Contact End */
+
+/* CSS login Start */
+
+.login-area {
+    height: fit-content;
+}
+
+.login-area .box-login {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 1vw;
+}
+
+.login-area .box-login .img-login img {
+    height: 100vh;
+    width: 100%;
+}
+
+.login-area .box-login .form-login {
+    padding: 0vw 0 0vw 0;
+}
+
+.login-area .box-login .form-login .title-login {
+    display: grid;
+    row-gap: 0.5vw;
+}
+
+.login-area .box-login .form-login .title-login h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.1vw;
+    line-height: 124%;
+    color: #000000;
+}
+
+.login-area .box-login .form-login .title-login h3 img{
+    width: 6.3vw;
+}
+
+.login-area .box-login .form-login .title-login p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 124%;
+    color: #000000;
+}
+
+.login-area .box-login .form-login .form-area {
+    display: grid;
+    padding: 0 7.8vw 0 0;
+    row-gap: 1.5vw;
+    margin-top: 2.27vw;
+}
+
+.login-area .box-login .form-login .form-area input {
+    width: 36.364583333333336vw;
+    height: 5.2vw;
+    background: #FFFFFF;
+    border-radius: 12px;
+    outline: 0;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.99vw;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.718161px;
+    padding-left: 1.4vw;
+    color: #A0A3BD;
+}
+
+.login-area .box-login .form-login .form-area button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 44px;
+    gap: 10px;
+    width: 36.364583333333336vw;
+    height: 4.55vw;
+    background: #94B49F;
+    border-radius: 12px;
+    outline: 0;
+    border: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4vw;
+    line-height: 124%;
+    color: #000000;
+}
+
+.login-area .box-login .form-login .form-area button:hover {
+    background: #b4b4b4;
+    color: #FFFFFF;
+}
+
+.login-area .box-login .form-login .form-area p{
+    font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 400;
+font-size: 1.3vw;
+line-height: 124%;
+color: #000000;
+}
+
+.login-area .box-login .form-login .form-area p a{
+    font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 400;
+font-size: 1.3vw;
+line-height: 124%;
+color: #2D9CDB;
+text-decoration: none;
+}
+
+.login-area .box-login .form-login .form-area p a:hover{
+    color: #006098;
+}
+
+.login-area .box-login .form-login .another-login {
+    display: grid;
+    margin-top: 2vw;
+    row-gap: 1vw;
+}
+
+.login-area .box-login .form-login .another-login button:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 10px;
+    width: 36.364583333333336vw;
+    height: 4.55vw;
+    background: #FFFFFF;
+    border-radius: 12px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 124%;
+    color: #000000;
+    outline: 0;
+    border: none;
+}
+
+.login-area .box-login .form-login .another-login button:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 10px;
+    width: 36.364583333333336vw;
+    height: 4.55vw;
+    background: #3B5998;
+    border-radius: 12px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 124%;
+    color: #FFFFFF;
+    outline: 0;
+    border: none;
+}
+
+.login-area .box-login .form-login .another-login button:nth-child(1):hover,
+.login-area .box-login .form-login .another-login button:nth-child(2):hover {
+    outline: 1;
+    border: 1px solid #7bceff;
+}
+
+.login-area .box-login .form-login .another-login button img{
+    width: 2.60vw;
+}
+
+/* CSS login End */
+
+/* CSS Register Start */
+
+.register-area {
+    height: fit-content;
+}
+
+.register-area .box-register {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 1vw;
+}
+
+.register-area .box-register .img-register img {
+    height: 100vh;
+    width: 100%;
+}
+
+.register-area .box-register .form-register {
+    padding: 0vw 0 0vw 0;
+}
+
+.register-area .box-register .form-register .title-register {
+    display: grid;
+    row-gap: 0.5vw;
+}
+
+.register-area .box-register .form-register .title-register h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.1vw;
+    line-height: 124%;
+    color: #000000;
+}
+
+.register-area .box-register .form-register .title-register h3 img{
+    width: 6.3vw;
+}
+
+.register-area .box-register .form-register .title-register p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 124%;
+    color: #000000;
+}
+
+.register-area .box-register .form-register .form-area {
+    display: grid;
+    padding: 0 7.8vw 0 0;
+    row-gap: 1.5vw;
+    margin-top: 2.27vw;
+}
+
+.register-area .box-register .form-register .form-area input {
+    width: 36.364583333333336vw;
+    height: 5.2vw;
+    background: #FFFFFF;
+    border-radius: 12px;
+    outline: 0;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.99vw;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.718161px;
+    padding-left: 1.4vw;
+    color: #A0A3BD;
+}
+
+.register-area .box-register .form-register .form-area button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 44px;
+    gap: 10px;
+    width: 36.364583333333336vw;
+    height: 4.55vw;
+    background: #94B49F;
+    border-radius: 12px;
+    outline: 0;
+    border: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4vw;
+    line-height: 124%;
+    color: #000000;
+}
+
+.register-area .box-register .form-register .form-area button:hover {
+    background: #b4b4b4;
+    color: #FFFFFF;
+}
+
+.register-area .box-register .form-register .form-area p{
+    font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 400;
+font-size: 1.3vw;
+line-height: 124%;
+color: #000000;
+}
+
+.register-area .box-register .form-register .form-area p a{
+    font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 400;
+font-size: 1.3vw;
+line-height: 124%;
+color: #2D9CDB;
+text-decoration: none;
+}
+
+.register-area .box-register .form-register .form-area p a:hover{
+    color: #006098;
+}
+
+/* CSS Register End */
+
+.footer {
+    border-top: 1px solid #BDBDBD;
+}
+
+.footer .box-footer {
+    margin: 67px 0 75px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .box-footer .footer-sosmed {
+    width: 403px;
+}
+
+.footer .box-footer .footer-sosmed h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.footer .box-footer .footer-sosmed p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 170.5%;
+    color: #000000;
+}
+
+.footer .box-footer .footer-sosmed .image {
+    margin-top: 25px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.footer .box-footer .footer-sosmed .image a {
+    width: 5vw;
+    height: 5vw;
+    transition: 0.3 ease;
+}
+
+.footer .box-footer .footer-sosmed .image a:hover {
+    animation: bounce 1s;
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.footer .box-footer .footer-info {
+    display: flex;
+    column-gap: 65px;
+}
+
+.footer .box-footer .footer-info h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5vw;
+    line-height: 170.5%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.footer .box-footer .footer-info ul {
+    margin-top: 17px;
+}
+
+.footer .box-footer .footer-info ul li {
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+.footer .box-footer .footer-info ul li a {
+    text-decoration: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 170.5%;
+    text-transform: capitalize;
+    color: #828282;
+}
+
+.footer .box-footer .footer-info ul li a:hover {
+    color: #000000;
+}
+
+@media (max-width:1048px) {
+
+    .navbar-box .box-navbar .logo h3 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .navbar-box .box-navbar .menu {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .navbar-box .box-navbar .menu li a {
+        text-decoration: none;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 170.5%;
+        color: #BDBDBD;
+    }
+
+    .navbar-box .box-navbar .menu li a:hover {
+        color: #000000;
+    }
+
+    .navbar-box .box-navbar .icon {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .img-cart {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .img-bell {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .img-prof {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .hero .box-hero {
+        margin: 23px 0 43px 0;
+    }
+
+    .hero .box-hero .box h3 {
+        font-size: 5vw;
+        line-height: 130.5%;
+    }
+
+    .hero .box-hero .box p {
+        font-size: 2.5vw;
+    }
+
+    .hero .box-hero .box button {
+        width: 217px;
+        height: 60px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 124%;
+        border-radius: 10px;
+    }
+
+    .service .box-service .icon-service img {
+        width: 100%;
+    }
+
+    .service .box-service .service-caption .service-title h3 {
+        font-size: 3vw;
+    }
+
+    .service .box-service .service-caption .service-value {
+        column-gap: 8vw;
+    }
+
+    .service .box-service .service-caption .service-value h3 {
+        font-size: 8vw;
+    }
+
+    .service .box-service .service-caption .service-value img {
+        width: 80%;
+    }
+
+    .service .box-service .service-caption .service-value p {
+        font-size: 3vw;
+    }
+
+    .advantage .box-advantage .image img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .advantage .box-advantage .box-caption h3 {
+        font-size: 5vw;
+    }
+
+    .advantage .box-advantage .box-caption p {
+        font-size: 2vw;
+    }
+
+    .advantage .box-advantage .box-caption button {
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .product .box-product .box-title h3 {
+        font-size: 6vw;
+    }
+
+    .product .box-product .box-title a {
+        font-size: 3vw;
+    }
+
+    .product .box-product .list-product .detail-product .caption-product .name-rate h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2vw;
+        line-height: 174%;
+        color: #000000;
+    }
+
+    .product .box-product .list-product .detail-product .caption-product .name-rate img {
+        width: 80%;
+    }
+
+    .product .box-product .list-product .detail-product .caption-product .price p {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 174%;
+        color: #000000;
+    }
+
+    .testimonial .box-testimonial .box-title h3 {
+        font-size: 6vw;
+    }
+
+    .prev,
+    .next {
+        font-size: 5.5vw;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide h3 {
+        font-size: 4.5vw;
+        line-height: 60px;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide h3 img {
+        width: 3vw;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide .prof-test img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide .prof-test {
+        margin-top: 37px;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide .prof-test div p {
+        font-size: 3.5vw;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide .prof-test div span {
+        font-size: 3vw;
+    }
+
+    .subscribe .box-subscribe .subscribe-title h3 {
+        width: 40vw;
+        font-size: 3vw;
+    }
+
+    .subscribe .box-subscribe .subscribe-title .form input {
+        width: 20vw;
+        height: 8vw;
+        font-size: 1.5vw;
+    }
+
+    .subscribe .box-subscribe .subscribe-title .form button {
+        width: 13vw;
+        height: 8vw;
+        font-size: 1.6vw;
+    }
+
+    /* CSS Product Start */
+
+    .product-area .carrousel-product-area {
+        padding-top: 100px;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+
+    .swiper-slide {
+        padding: 0 16px;
+        width: 100%;
+        min-height: 65vw;
+        background-size: cover;
+        background-position: center;
+        align-content: center;
+
+    }
+
+    .swiper-slide h3 {
+        font-size: 6vw;
+        line-height: 88px;
+        padding: 0 140px;
+    }
+
+    .swiper-slide button {
+        margin-top: 20px;
+        width: 25vw;
+        height: 8vw;
+        font-size: 2vw;
+    }
+
+    .product-name .box-product-name .search-input form button {
+        width: 10%;
+        padding-bottom: 10.5px;
+    }
+
+    .product-name .box-product-name .search-input form input {
+        width: 90%;
+    }
+
+    .product .box-product .product-title h3 {
+        font-size: 4vw;
+    }
+
+    /* CSS Product End */
+
+    /* CSS Detail Start */
+
+    .detail-product-area .box-detail-product-area .description-detail-product h3 {
+        font-size: 1.8vw;
+    }
+
+    .detail-product-area .box-detail-product-area .description-detail-product p {
+        font-size: 1.4vw;
+    }
+
+    .select-variant {
+        height: 100%;
+    }
+
+    .testimonial-detail .box-testimonial-detail .title-testimonial-detail h3 {
+        font-size: 2vw;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name h3 {
+        font-size: 1.5vw;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name p {
+        font-size: 1.5vw;
+    }
+
+    /* CSS Detail end */
+
+    /* CSS Contact Start */
+
+    .contact-area .box-contact-area {
+        padding-top: 130px;
+        padding-bottom: 80px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        column-gap: 20px;
+    }
+
+    .contact-area .box-contact-area .contact-form h3 {
+        font-size: 2.7vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area label {
+        font-size: 2vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area input {
+        width: 100%;
+        height: 4.88vw;
+        border-radius: 0.99vw;
+        padding: 1.69vw 1.6vw;
+        font-size: 1.5vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area textarea {
+        width: 100%;
+        height: 18.9vw;
+        border-radius: 0.99vw;
+        padding: 1.23vw 1.6vw;
+        font-size: 1.5vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area button {
+        margin-top: 2.3vw;
+        padding: 1.62vw 2.86vw;
+        border-radius: 0.99vw;
+        font-size: 2vw;
+    }
+
+    /* CSS Contact End */
+
+    /* CSS login Start */
+
+.login-area .box-login {
+    align-items: center;
+}
+
+.login-area .box-login .form-login .title-login h3 {
+    font-size: 3.1vw;
+}
+
+.login-area .box-login .form-login .title-login p {
+    font-size: 1.5vw;
+}
+
+.login-area .box-login .form-login .form-area {
+    padding: 0 7.8vw 0 0;
+    row-gap: 1.5vw;
+    margin-top: 2.27vw;
+}
+
+.login-area .box-login .form-login .form-area input {
+    width: 100%;
+    height: 5.2vw;
+    border-radius: 0.78vw;
+    font-size: 0.99vw;
+    padding-left: 1.4vw;
+}
+
+.login-area .box-login .form-login .form-area button {
+    padding: 0px 0px;
+    width: 100%;
+    height: 4.5vw;
+    border-radius: 0.78vw;
+    font-size: 1.4vw;
+}
+
+.login-area .box-login .form-login .form-area p{
+font-size: 1.3vw;
+}
+
+.login-area .box-login .form-login .form-area p a{
+font-size: 1.3vw;
+}
+
+.login-area .box-login .form-login .another-login button:nth-child(1) {
+    padding: 0px 0px;
+    width: 85%;
+    height: 4.55vw;
+    border-radius: 0.78vw;
+    font-size: 1.3vw;
+}
+
+.login-area .box-login .form-login .another-login button:nth-child(2) {
+    padding: 0px 0px;
+    width: 85%;
+    height: 4.55vw;
+    border-radius: 0.78vw;
+    font-size: 1.3vw;
+}
+
+/* CSS login End */
+
+/* CSS Register Start */
+
+.register-area .box-register {
+    align-items: center;
+}
+
+.register-area .box-register .form-register .title-register h3 {
+    font-size: 3.1vw;
+}
+
+.register-area .box-register .form-register .title-register p {
+    font-size: 1.5vw;
+}
+
+.register-area .box-register .form-register .form-area {
+    padding: 0 7.8vw 0 0;
+    row-gap: 1.5vw;
+    margin-top: 2.27vw;
+}
+
+.register-area .box-register .form-register .form-area input {
+    width: 100%;
+    height: 5.2vw;
+    border-radius: 0.78vw;
+    font-size: 0.99vw;
+    padding-left: 1.4vw;
+}
+
+.register-area .box-register .form-register .form-area button {
+    padding: 0px 0px;
+    width: 100%;
+    height: 4.5vw;
+    border-radius: 0.78vw;
+    font-size: 1.4vw;
+}
+
+.register-area .box-register .form-register .form-area p{
+font-size: 1.3vw;
+}
+
+.register-area .box-register .form-register .form-area p a{
+font-size: 1.3vw;
+}
+
+/* CSS Register End */
+
+    .footer .box-footer .footer-sosmed {
+        width: 240px;
+    }
+
+    .footer .box-footer .footer-sosmed h3 {
+        font-size: 3.5vw;
+    }
+
+    .footer .box-footer .footer-sosmed p {
+        font-size: 1.4vw;
+    }
+
+    .footer .box-footer .footer-sosmed .image {
+        column-gap: 20px;
+    }
+
+    .footer .box-footer .footer-sosmed .image img {
+        width: 6vw;
+    }
+
+    .footer .box-footer .footer-info h3 {
+        font-size: 1.6vw;
+    }
+
+    .footer .box-footer .footer-info ul {
+        margin-top: 12px;
+    }
+
+    .footer .box-footer .footer-info ul li {
+        margin-top: 8px;
+    }
+
+    .footer .box-footer .footer-info ul li a {
+        font-size: 1.4vw;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    header .ellips {
+        position: absolute;
+        z-index: -1;
+        width: 50%;
+    }
+
+    #menu-bar {
+        display: block;
+    }
+
+    .navbar-box .box-navbar .menu {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        top: 70px;
+        right: 50%;
+        transform: translateX(300%);
+        opacity: 0;
+        z-index: 1;
+        transition: all .4s ease;
+        background-color: #FCF8E8;
+    }
+
+    .navbar-box .box-navbar .menu li {
+        margin-top: 20px;
+    }
+
+    .navbar-box .box-navbar .menu.menu-active {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        top: 70px;
+        right: 50%;
+        transform: translateX(50%);
+        display: block;
+        opacity: 1;
+        z-index: 0;
+        transition: all .3s ease;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
+
+    .hero .box-hero .image {
+        text-align: center;
+    }
+
+    .hero .box-hero .image img {
+        width: 80%;
+        height: 60%;
+    }
+
+    .hero .box-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 0px;
+        row-gap: 0px;
+        margin: 12px 0 0px 0;
+    }
+
+    .hero .box-hero .box {
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .hero .box-hero .box h3 {
+        font-size: 6vw;
+    }
+
+    .hero .box-hero .box p {
+        margin-top: 12px;
+        font-size: 4vw;
+    }
+
+    .hero .box-hero .box button {
+        margin-top: 28px;
+    }
+
+    .service .box-service {
+        margin-top: -100px;
+    }
+
+    .service .box-service .icon-service img {
+        display: none;
+    }
+
+    .service .box-service .service-caption .service-title {
+        padding: 0 0px;
+    }
+
+    .service .box-service .service-caption .service-title h3 {
+        font-size: 4vw;
+    }
+
+    .service .box-service .service-caption .service-value {
+        column-gap: 8vw;
+    }
+
+    .service .box-service .service-caption .service-value h3 {
+        font-size: 8vw;
+    }
+
+    .service .box-service .service-caption .service-value img {
+        width: 60%;
+    }
+
+    .service .box-service .service-caption .service-value div:nth-child(2) p {
+        width: 150px;
+    }
+
+    .service .box-service .service-caption .service-value p {
+        font-size: 3.5vw;
+    }
+
+    .advantage .box-advantage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        margin: 50px 0 -50px 0;
+    }
+
+    .advantage .box-advantage .image {
+        text-align: center;
+    }
+
+    .advantage .box-advantage .image img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .advantage .box-advantage .box-caption {
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .advantage .box-advantage .box-caption h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 6vw;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .advantage .box-advantage .box-caption p {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 174%;
+        color: #000000;
+    }
+
+    .advantage .box-advantage .box-caption button {
+        margin-top: 35px;
+        width: 217px;
+        height: 60px;
+        left: 663px;
+        top: 2184px;
+        background: #94B49F;
+        border-radius: 12px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 124%;
+        color: #000000;
+        border: none;
+        outline: 0;
+        cursor: pointer;
+    }
+
+    .product .box-product .list-product {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 50px;
+        row-gap: 30px;
+        margin: 45px 0 100px 0;
+    }
+
+    .product .box-product .list-product .detail-product .caption-product .name-rate h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 174%;
+        color: #000000;
+    }
+
+    .product .box-product .list-product .detail-product .caption-product .name-rate img {
+        width: 60%;
+    }
+
+    .product .box-product .list-product .detail-product .caption-product .price p {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 174%;
+        color: #000000;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide {
+        margin-top: 40px;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide h3 {
+        line-height: 45px;
+    }
+
+    .subscribe .box-subscribe {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    .subscribe .box-subscribe .subscribe-title {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .subscribe .box-subscribe .subscribe-title h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 6vw;
+    }
+
+    .subscribe .box-subscribe .subscribe-title .form input {
+        width: 40vw;
+        height: 10vw;
+        font-size: 2.5vw;
+    }
+
+    .subscribe .box-subscribe .subscribe-title .form button {
+        width: 20vw;
+        height: 10vw;
+        font-size: 2.5vw;
+    }
+
+    /* CSS Product Start */
+
+    .swiper-slide h3 {
+        font-size: 6vw;
+        line-height: 63px;
+        padding: 0 60px;
+    }
+
+    .swiper-slide button {
+        margin-top: 10px;
+        font-size: 2.5vw;
+    }
+
+    .product-name .box-product-name .search-input form button {
+        height: 70px;
+    }
+
+    .product-name .box-product-name .search-input form input {
+        height: 70px;
+    }
+
+    .product .box-product {
+        margin-top: 52px;
+    }
+
+    .product .box-product .product-title h3 {
+        font-size: 3vw;
+    }
+
+    /* CSS Product End */
+
+    /* CSS Detail Start */
+
+    .detail-area .box-detail-area {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+    }
+
+    .detail-product-area .box-detail-product-area {
+        margin-top: 28px;
+        margin-bottom: 75px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .detail-product-area .box-detail-product-area .title-detail-product h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.5vw;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .detail-product-area .box-detail-product-area .title-detail-product img {
+        width: 13vw;
+    }
+
+    .detail-product-area .box-detail-product-area .description-detail-product {
+        margin-top: 3vw;
+    }
+
+    .detail-product-area .box-detail-product-area .description-detail-product h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5vw;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .detail-product-area .box-detail-product-area .description-detail-product p {
+        margin-top: 1.5vw;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8vw;
+        line-height: 140.5%;
+        color: #000000;
+    }
+
+    .select-variant {
+        width: 100%;
+        height: 100%;
+        margin-top: 3vw;
+        background: #94B49F;
+        border: 1px solid #FCF8E8;
+        border-radius: 8px;
+        padding: 2vw 2vw;
+        justify-self: center;
+    }
+
+    .select-variant h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5vw;
+        line-height: 27px;
+        color: #000000;
+    }
+
+    .select-variant .size {
+        display: flex;
+        justify-content: start;
+        margin-top: 0.8vw;
+        column-gap: 5vw;
+    }
+
+    .select-variant .size button {
+        background: #F2F2F2;
+        border-radius: 4px;
+        padding: 3px 1.8vw;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2vw;
+        line-height: 27px;
+        color: #000000;
+    }
+
+    .select-variant .discount-desc {
+        display: flex;
+        align-items: center;
+        padding: 1.2vw 0.65vw;
+        background: #FCF8E8;
+        border-radius: 8px;
+        column-gap: 1.1vw;
+        margin-top: 1.7vw;
+    }
+
+    .select-variant .discount-desc img {
+        width: 2.47vw;
+    }
+
+    .select-variant .discount-desc h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.1vw;
+        line-height: 1.5vw;
+        color: #000000;
+    }
+
+    .select-variant .total-buying {
+        margin-top: 1.7vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .select-variant .total-buying .count {
+        display: flex;
+        column-gap: 3.25vw;
+    }
+
+    .select-variant .total-buying .count button {
+        outline: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .select-variant .total-buying .count button img {
+        width: 2.7vw;
+    }
+
+    .select-variant .total-buying .count button img:hover {
+        animation: bounce 1s;
+    }
+
+    .select-variant .total-buying h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.08vw;
+        line-height: 3.1vw;
+        color: #FCF8E8;
+    }
+
+    .select-variant h3:nth-child(5) {
+        margin-top: 0.2vw;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1vw;
+        line-height: 15px;
+        color: #000000;
+    }
+
+    .select-variant .btn-select {
+        margin-top: 1.7vh;
+        display: grid;
+        row-gap: 0.7vw;
+    }
+
+    .select-variant .btn-select button {
+        width: 100%;
+        height: 4.4vw;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5vw;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    .select-variant .btn-select button:nth-child(1) {
+        outline: 0;
+        border: none;
+        background: #FCF8E8;
+        border-radius: 4px;
+    }
+
+    .select-variant .btn-select button:nth-child(1):hover {
+        background: rgba(252, 248, 232, 0.5);
+    }
+
+    .select-variant .btn-select button:nth-child(2) {
+        outline: 0;
+        background: rgba(252, 248, 232, 0.5);
+        border: 3px solid #FCF8E8;
+        border-radius: 4px;
+    }
+
+    .select-variant .btn-select button:nth-child(2):hover {
+        background: #FCF8E8;
+        border: 5px solid #a8a8a8;
+    }
+
+    .testimonial-detail .box-testimonial-detail {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .testimonial-detail .box-testimonial-detail .title-testimonial-detail h3 {
+        font-size: 3vw;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail {
+        margin-top: 0px;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial img {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name h3 {
+        font-size: 2.5vw;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name img {
+        width: 10vw;
+        height: 2vw;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name p {
+        font-size: 2vw;
+    }
+
+    /* CSS Detail End */
+
+    /* CSS Payment Start */
+
+    .payment-area .box-payment-area {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        justify-items: center;
+    }
+
+    .payment-area .box-payment-area .payment-image img {
+        width: 44.7vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.5vw;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .payment-area .box-payment-area .detail-payment p {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment label {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5vw;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment select {
+        padding: 2.1vw 0.9vw;
+        gap: 10px;
+        width: 34.2vw;
+        height: 7vw;
+        background: #F2F2F2;
+        border-radius: 4px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2vw;
+        line-height: 170.5%;
+        color: #000000;
+        outline: 0;
+        border: none;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment .subtotal {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment .total {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment .subtotal h3:nth-child(1),
+    .payment-area .box-payment-area .detail-payment .desc-payment .total h3:nth-child(1) {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment .subtotal h3:nth-child(2),
+    .payment-area .box-payment-area .detail-payment .desc-payment .total h3:nth-child(2) {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment button {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 1.62vw 2.86vw;
+        gap: 10px;
+        width: 34.2vw;
+        height: 6vw;
+        background: #94B49F;
+        border-radius: 4px;
+        outline: 0;
+        border: none;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 124%;
+        color: #000000;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment button:hover {
+        background: #b4b4b4;
+    }
+
+    /* CSS Payment End */
+
+    /* CSS Cart Start */
+
+    .cart-area .box-cart-area {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr;
+    }
+
+    .cart-area .box-cart-area .list-cart input {
+        width: 1.8vw;
+        height: 1.9vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart-img {
+        width: 20.1vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .name-product h3 {
+        font-size: 3vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .name-product p,
+    .cart-area .box-cart-area .list-cart .cart .name-product p span {
+        font-size: 2.5vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .detail-cart .max-product .btn-plus-minus img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .max-product h3 {
+        font-size: 2.08vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .max-product p {
+        font-size: 1vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .trash-img {
+        Width: 3vw;
+        Height: 3vw;
+    }
+
+    .cart-area .box-cart-area .total-cart {
+        margin-top: 20px;
+        gap: 10px;
+        width: 100%;
+        height: 35.78vh;
+    }
+
+    .cart-area .box-cart-area .total-cart h3 {
+        font-size: 3vw;
+    }
+
+    .cart-area .box-cart-area .total-cart p {
+        margin-top: 0.65vw;
+        font-size: 3.5vw;
+    }
+
+    .cart-area .box-cart-area .total-cart .discount-desc img {
+        width: 3vw;
+    }
+
+    .cart-area .box-cart-area .total-cart .discount-desc h3 {
+        font-size: 2vw;
+    }
+
+    .cart-area .box-cart-area .total-cart .btn-select button {
+        width: 100%;
+        height: 5vw;
+        font-size: 2vw;
+    }
+
+    /* CSS Cart End */
+
+    /* CSS Contact Start */
+
+    .contact-area .box-contact-area {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        column-gap: 20px;
+    }
+
+    .contact-area .box-contact-area .substract-1 img:nth-child(1) {
+        width: 8.80vw;
+    }
+
+    .contact-area .box-contact-area .substract-1 img:nth-child(2) {
+        width: 2.2vw;
+    }
+
+    .contact-area .box-contact-area .contact-form {
+        display: grid;
+        row-gap: 3vw;
+    }
+
+    .contact-area .box-contact-area .contact-form h3 {
+        font-size: 3.5vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area label {
+        font-size: 2vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area input {
+        width: 44.05vw;
+        height: 5.88vw;
+        border-radius: 0.9vw;
+        padding: 1.69vw 1.6vw;
+        font-size: 1.5vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area textarea {
+        width: 44.05vw;
+        height: 18.9vw;
+        border-radius: 0.99vw;
+        padding: 1.5vw 1.6vw;
+        font-size: 1.5vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area button {
+        padding: 1.62vw 2.86vw;
+        border-radius: 0.9vw;
+        font-size: 2vw;
+    }
+
+    /* CSS Contact End */
+
+    /* CSS Login Start */
+
+    .login-area .box-login {
+        display: grid;
+        grid-template-columns: 4fr; 
+        place-items: center;
+    }
+    
+    .login-area .box-login .img-login{
+        display: none;
+    }
+
+    .login-area .box-login .img-login img {
+        display: none;
+    }
+
+.login-area .box-login .form-login{
+    padding: 18vh 0;
+}
+
+.login-area .box-login .form-login .title-login h3 {
+    font-size: 6vw;
+}
+
+.login-area .box-login .form-login .title-login p {
+    font-size: 2.5vw;
+}
+
+.login-area .box-login .form-login .form-area {
+    padding: 0 7.8vw 0 0;
+    row-gap: 1.5vw;
+    margin-top: 2.27vw;
+}
+
+.login-area .box-login .form-login .form-area input {
+    width: 65.05vw;
+    height: 8vw;
+    border-radius: 0.78vw;
+    font-size: 1.7vw;
+    padding-left: 1.4vw;
+}
+
+.login-area .box-login .form-login .form-area button {
+    padding: 0px 0px;
+    width: 100%;
+    height: 6vw;
+    border-radius: 0.78vw;
+    font-size: 1.7vw;
+}
+
+.login-area .box-login .form-login .form-area p{
+font-size: 1.6vw;
+}
+
+.login-area .box-login .form-login .form-area p a{
+font-size: 1.6vw;
+}
+
+.login-area .box-login .form-login .another-login {
+    display: grid;
+    margin-top: 2vw;
+    row-gap: 2vw;
+}
+
+.login-area .box-login .form-login .another-login button:nth-child(1) {
+    padding: 0px 0px;
+    width: 90%;
+    height: 6vw;
+    border-radius: 0.78vw;
+    font-size: 1.7vw;
+}
+
+.login-area .box-login .form-login .another-login button:nth-child(2) {
+    padding: 0px 0px;
+    width: 90%;
+    height: 6vw;
+    border-radius: 0.78vw;
+    font-size: 1.7vw;
+}
+
+/* CSS login End */
+
+ /* CSS Register Start */
+
+ .register-area .box-register {
+    display: grid;
+    grid-template-columns: 4fr; 
+    place-items: center;
+}
+
+.register-area .box-register .img-register{
+    display: none;
+}
+
+.register-area .box-register .img-register img {
+    display: none;
+}
+
+.register-area .box-register .form-register{
+padding: 18vh 0;
+}
+
+.register-area .box-register .form-register .title-register h3 {
+font-size: 6vw;
+}
+
+.register-area .box-register .form-register .title-register p {
+font-size: 2.5vw;
+}
+
+.register-area .box-register .form-register .form-area {
+padding: 0 7.8vw 0 0;
+row-gap: 1.5vw;
+margin-top: 2.27vw;
+}
+
+.register-area .box-register .form-register .form-area input {
+width: 65.05vw;
+height: 8vw;
+border-radius: 0.78vw;
+font-size: 1.7vw;
+padding-left: 1.4vw;
+}
+
+.register-area .box-register .form-register .form-area button {
+padding: 0px 0px;
+width: 100%;
+height: 6vw;
+border-radius: 0.78vw;
+font-size: 1.7vw;
+}
+
+.register-area .box-register .form-register .form-area p{
+font-size: 1.6vw;
+}
+
+.register-area .box-register .form-register .form-area p a{
+font-size: 1.6vw;
+}
+
+/* CSS Register End */
+
+    .footer .box-footer {
+        margin: 50px 0 55px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footer .box-footer .footer-sosmed {
+        display: grid;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .footer .box-footer .footer-sosmed h3 {
+        font-size: 4vw;
+    }
+
+    .footer .box-footer .footer-sosmed p {
+        font-size: 2vw;
+    }
+
+    .footer .box-footer .footer-sosmed .image {
+        margin-top: 25px;
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .footer .box-footer .footer-sosmed .image img {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .footer .box-footer .footer-info {
+        display: flex;
+        column-gap: 65px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .footer .box-footer .footer-info h3 {
+        font-size: 3vw;
+    }
+
+    .footer .box-footer .footer-info ul {
+        margin-top: 6px;
+    }
+
+    .footer .box-footer .footer-info ul li {
+        margin-top: 4px;
+    }
+
+    .footer .box-footer .footer-info ul li a {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:535px) {
+
+    .container {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .navbar-box .box-navbar .logo h3 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 170.5%;
+        color: #000000;
+    }
+
+    .navbar-box .box-navbar .menu {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .navbar-box .box-navbar .menu li a {
+        text-decoration: none;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 170.5%;
+        color: #BDBDBD;
+    }
+
+    .navbar-box .box-navbar .menu li a:hover {
+        color: #000000;
+    }
+
+    .navbar-box .box-navbar .icon {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .img-cart {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .img-bell {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .img-prof {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    #menu-bar {
+        font-size: 30px;
+    }
+
+    .hero .box-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 0px;
+        row-gap: 0px;
+        margin: 32px 0 0px 0;
+    }
+
+    .hero .box-hero .box button {
+        width: 167px;
+        height: 60px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 124%;
+        border-radius: 10px;
+    }
+
+    .service .box-service {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -100px;
+        padding: 47px 0 75px 0;
+    }
+
+    .service .box-service .service-caption .service-title h3 {
+        font-size: 4vw;
+    }
+
+    .service .box-service .service-caption .service-value {
+        column-gap: 0vw;
+    }
+
+    .service .box-service .service-caption .service-value h3 {
+        font-size: 8vw;
+    }
+
+    .service .box-service .service-caption .service-value img {
+        width: 50%;
+    }
+
+    .service .box-service .service-caption .service-value div:nth-child(2) p {
+        width: 100px;
+    }
+
+    .service .box-service .service-caption .service-value p {
+        font-size: 3vw;
+    }
+
+    .advantage .box-advantage {
+        margin: 50px 0 -70px 0;
+    }
+
+    .advantage .box-advantage .box-caption button {
+        width: 166px;
+        height: 60px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .product .box-product .list-product {
+        margin: 45px 0 70px 0;
+    }
+
+    .product .box-product .list-product .detail-product .caption-product .name-rate h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3vw;
+        line-height: 174%;
+        color: #000000;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide {
+        margin-top: 30px;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide h3 {
+        line-height: 35px;
+    }
+
+    .testimonial .box-testimonial .box-list-test .testimonial-slide .prof-test {
+        margin-top: 25px;
+    }
+
+    .subscribe .box-subscribe {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    /* CSS Product Start */
+
+    .swiper-slide h3 {
+        line-height: 40px;
+        padding: 0 30px;
+    }
+
+    .swiper-slide button {
+        font-size: 3vw;
+    }
+
+    .product-name .box-product-name {
+        margin-top: 50px;
+    }
+
+    .product-name .box-product-name .search-input form button {
+        width: 15%;
+        height: 60px;
+    }
+
+
+    .product-name .box-product-name .search-input form input {
+        width: 85%;
+        height: 60px;
+    }
+
+    .product .box-product {
+        margin-top: 32px;
+    }
+
+    .product .box-product .product-title h3 {
+        font-size: 3vw;
+    }
+
+    .product .box-product .list-product {
+        margin-top: 32px;
+    }
+
+    /* CSS Product End */
+
+    /* CSS Detail Start */
+
+    .detail-area .box-detail-area {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 20px;
+    }
+
+    .detail-area .box-detail-area .all-detail-image {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 3vw;
+    }
+
+    .detail-product-area .box-detail-product-area {
+        margin-bottom: 75px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .detail-product-area .box-detail-product-area .title-detail-product h3 {
+        font-size: 5vw;
+    }
+
+    .detail-product-area .box-detail-product-area .title-detail-product img {
+        width: 20vw;
+    }
+
+    .detail-product-area .box-detail-product-area .description-detail-product {
+        margin-top: 3vw;
+    }
+
+    .detail-product-area .box-detail-product-area .description-detail-product h3 {
+        font-size: 4vw;
+    }
+
+    .detail-product-area .box-detail-product-area .description-detail-product p {
+        margin-top: 1.5vw;
+        font-size: 3vw;
+        line-height: 140.5%;
+    }
+
+    .select-variant {
+        margin-top: 3vw;
+        padding: 2vw 2vw;
+    }
+
+    .select-variant h3 {
+        font-size: 3vw;
+    }
+
+    .select-variant .size button {
+        padding: 1px 1.8vw;
+        font-size: 2vw;
+    }
+
+    .select-variant .discount-desc {
+        padding: 1.5vw 0.65vw;
+    }
+
+    .select-variant .discount-desc img {
+        width: 3.5vw;
+    }
+
+    .select-variant .discount-desc h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 1.5vw;
+        color: #000000;
+    }
+
+    .select-variant .total-buying .count button img {
+        width: 3vw;
+    }
+
+    .select-variant .total-buying h3 {
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+
+    .select-variant h3:nth-child(5) {
+        font-size: 1.5vw;
+    }
+
+    .select-variant .btn-select {
+        margin-top: 1.7vh;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 1vw;
+    }
+
+    .select-variant .btn-select button {
+        height: 25px;
+        font-size: 2.5vw;
+    }
+
+    .select-variant .btn-select button:nth-child(2) {
+        border: 1px solid #FCF8E8;
+    }
+
+    .select-variant .btn-select button:nth-child(2):hover {
+        border: 1px solid #a8a8a8;
+    }
+
+    .testimonial-detail .box-testimonial-detail {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .testimonial-detail .box-testimonial-detail .title-testimonial-detail h3 {
+        font-size: 3vw;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail {
+        margin-top: 20px;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial {
+        column-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial img {
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name h3 {
+        font-size: 2.5vw;
+        line-height: 100.5%;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name img {
+        width: 10vw;
+        height: 2vw;
+    }
+
+    .testimonial-detail .box-testimonial-detail .list-testimonial-detail .list-prof-testimonial .name p {
+        font-size: 2vw;
+        line-height: 140.5%;
+    }
+
+    /* CSS Detail End */
+
+    /* CSS Payment Start */
+
+    .payment-area .box-payment-area .payment-image img {
+        width: 44.7vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment h3 {
+        font-size: 4vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment p {
+        font-size: 3vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment {
+        width: 90%;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment div:nth-child(1) {
+        display: grid;
+        row-gap: 0vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment label {
+        font-size: 3vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment select {
+        width: 49.2vw;
+        height: 9vw;
+        border-radius: 4px;
+        font-size: 3vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment .subtotal {
+        margin-top: 10px;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment .total {
+        margin-top: 10px;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment .subtotal h3:nth-child(1),
+    .payment-area .box-payment-area .detail-payment .desc-payment .total h3:nth-child(1) {
+        font-size: 3vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment .subtotal h3:nth-child(2),
+    .payment-area .box-payment-area .detail-payment .desc-payment .total h3:nth-child(2) {
+        font-size: 3vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment button {
+        margin-top: 20px;
+        width: 100%;
+        height: 7vw;
+        border-radius: 4px;
+        font-size: 3vw;
+    }
+
+    .payment-area .box-payment-area .detail-payment .desc-payment button:hover {
+        background: #b4b4b4;
+    }
+
+    /* CSS Payment End */
+
+    /* CSS Cart Start */
+
+    .cart-area .box-cart-area .list-cart input {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart-img {
+        width: 25.1vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .name-product h3 {
+        font-size: 4vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .name-product p,
+    .cart-area .box-cart-area .list-cart .cart .name-product p span {
+        font-size: 3vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .detail-cart .max-product .btn-plus-minus img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .max-product h3 {
+        font-size: 3vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .max-product p {
+        font-size: 1.2vw;
+    }
+
+    .cart-area .box-cart-area .list-cart .cart .trash-img {
+        Width: 3vw;
+        Height: 3vw;
+    }
+
+    .cart-area .box-cart-area .total-cart {
+        margin-top: 20px;
+        gap: 10px;
+        width: 100%;
+        height: 30.78vh;
+    }
+
+    .cart-area .box-cart-area .total-cart h3 {
+        font-size: 3vw;
+    }
+
+    .cart-area .box-cart-area .total-cart p {
+        margin-top: 0vw;
+        font-size: 3.5vw;
+    }
+
+    .cart-area .box-cart-area .total-cart .discount-desc img {
+        width: 3vw;
+    }
+
+    .cart-area .box-cart-area .total-cart .discount-desc h3 {
+        font-size: 2vw;
+    }
+
+    .cart-area .box-cart-area .total-cart .btn-select button {
+        width: 100%;
+        height: 5vw;
+        font-size: 2vw;
+    }
+
+    /* CSS Cart End */
+
+    /* CSS Contact Start */
+
+    .contact-area .box-contact-area {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-area .box-contact-area .substract-1 {
+        display: none;
+    }
+
+    .contact-area .box-contact-area .contact-form h3 {
+        font-size: 5vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area label {
+        font-size: 3vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area input {
+        width: 100%;
+        height: 9.88vw;
+        border-radius: 0.99vw;
+        padding: 1.69vw 1.6vw;
+        font-size: 2.5vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area textarea {
+        width: 100%;
+        height: 22.9vw;
+        border-radius: 0.99vw;
+        padding: 1.23vw 1.6vw;
+        font-size: 2.5vw;
+    }
+
+    .contact-area .box-contact-area .contact-form .form-area button {
+        margin-top: 2.3vw;
+        padding: 1.62vw 2.86vw;
+        border-radius: 0.99vw;
+        font-size: 3vw;
+    }
+
+    .contact-area .box-contact-area .substract-2 img {
+        display: none;
+    }
+
+    /* CSS Contact End */
+
+       /* CSS login Start */
+
+       .login-area .box-login {
+        display: grid;
+        grid-template-columns: 4fr; 
+        place-items: center;
+    }
+    
+    .login-area .box-login .img-login{
+        display: none;
+    }
+
+    .login-area .box-login .img-login img {
+        display: none;
+    }
+
+.login-area .box-login .form-login{
+    display: grid;
+    padding: 20vh 0;
+    row-gap: 2vw;
+}
+
+.login-area .box-login .form-login .title-login{
+    row-gap: 1vw;
+}
+
+.login-area .box-login .form-login .title-login h3 {
+    font-size: 6.5vw;
+}
+
+.login-area .box-login .form-login .title-login p {
+    font-size: 3vw;
+}
+
+.login-area .box-login .form-login .form-area {
+    padding: 0 7.8vw 0 0;
+    row-gap: 3vw;
+    margin-top: 2.27vw;
+}
+
+.login-area .box-login .form-login .form-area input {
+    width: 65.05vw;
+    height: 9vw;
+    border-radius: 0.78vw;
+    font-size: 1.9vw;
+    padding-left: 1.4vw;
+}
+
+.login-area .box-login .form-login .form-area button {
+    padding: 0px 0px;
+    width: 100%;
+    height: 7vw;
+    border-radius: 0.78vw;
+    font-size: 1.9vw;
+}
+
+.login-area .box-login .form-login .form-area p{
+font-size: 1.8vw;
+}
+
+.login-area .box-login .form-login .form-area p a{
+font-size: 1.8vw;
+}
+
+.login-area .box-login .form-login .another-login {
+    display: grid;
+    margin-top: 2vw;
+    row-gap: 3vw;
+}
+
+.login-area .box-login .form-login .another-login button:nth-child(1) {
+    padding: 0px 0px;
+    width: 90%;
+    height: 7vw;
+    border-radius: 0.78vw;
+    font-size: 1.9vw;
+}
+
+.login-area .box-login .form-login .another-login button:nth-child(2) {
+    padding: 0px 0px;
+    width: 90%;
+    height: 7vw;
+    border-radius: 0.78vw;
+    font-size: 1.9vw;
+}
+
+/* CSS login End */
+
+/* CSS login Start */
+
+.register-area .box-register {
+    display: grid;
+    grid-template-columns: 4fr; 
+    place-items: center;
+}
+
+.register-area .box-register .img-register{
+    display: none;
+}
+
+.register-area .box-register .img-register img {
+    display: none;
+}
+
+.register-area .box-register .form-register{
+display: grid;
+padding: 20vh 0;
+row-gap: 2vw;
+}
+
+.register-area .box-register .form-register .title-register{
+row-gap: 1vw;
+}
+
+.register-area .box-register .form-register .title-register h3 {
+font-size: 6.5vw;
+}
+
+.register-area .box-register .form-register .title-register p {
+font-size: 3vw;
+}
+
+.register-area .box-register .form-register .form-area {
+padding: 0 7.8vw 0 0;
+row-gap: 3vw;
+margin-top: 2.27vw;
+}
+
+.register-area .box-register .form-register .form-area input {
+width: 65.05vw;
+height: 9vw;
+border-radius: 0.78vw;
+font-size: 1.9vw;
+padding-left: 1.4vw;
+}
+
+.register-area .box-register .form-register .form-area button {
+padding: 0px 0px;
+width: 100%;
+height: 7vw;
+border-radius: 0.78vw;
+font-size: 1.9vw;
+}
+
+.register-area .box-register .form-register .form-area p{
+font-size: 1.8vw;
+}
+
+.register-area .box-register .form-register .form-area p a{
+font-size: 1.8vw;
+}
+
+/* CSS Register End */
+
+    .footer .box-footer {
+        margin: 15px 0 15px 0;
+    }
+
+    .footer .box-footer .footer-sosmed {
+        display: grid;
+        justify-items: center;
+    }
+
+    .footer .box-footer .footer-sosmed h3 {
+        font-size: 5vw;
+    }
+
+    .footer .box-footer .footer-sosmed p {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .footer .box-footer .footer-sosmed .image {
+        margin-top: 5px;
+        column-gap: 15px;
+    }
+
+    .footer .box-footer .footer-sosmed .image img {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .footer .box-footer .footer-info {
+        column-gap: 55px;
+        margin-top: 5px;
+    }
+
+    .footer .box-footer .footer-info h3 {
+        font-size: 3vw;
+    }
+
+    .footer .box-footer .footer-info ul {
+        margin-top: 2px;
+    }
+
+    .footer .box-footer .footer-info ul li {
+        margin-top: 0px;
+    }
+
+    .footer .box-footer .footer-info ul li a {
+        font-size: 2.5vw;
+    }
+
+}
