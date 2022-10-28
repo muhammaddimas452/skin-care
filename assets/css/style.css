@@ -404,16 +404,16 @@ header .hero {
     color: #000000;
 }
 
+.testimonial .box-testimonial .box-title .btn-slide{
+    display: flex;
+    column-gap: 1vw;
+}
+
 .prev,
 .next {
     cursor: pointer;
     color: #94B49F;
-    font-size: 60px;
-}
-
-.prev:hover,
-.next:hover {
-    color: #6ba36c;
+    width: 3.64vw;
 }
 
 .fade {
@@ -1906,7 +1906,7 @@ text-decoration: none;
 
     .prev,
     .next {
-        font-size: 5.5vw;
+        width: 5.56vw;
     }
 
     .testimonial .box-testimonial .box-list-test .testimonial-slide h3 {
